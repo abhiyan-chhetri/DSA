@@ -1,12 +1,14 @@
 public class CountDigits{
 
+    /**
+     * Problem Description: We are given an n-digit number. The task is to find the number of digits in the number, provided that, n>0.
+     */
     public static void main(String[] args){
 
         System.out.println(count(192322));
 
     }
 
-    //my solution
     public static int count(int number){
         int count = 1;
         while(number > 10){
@@ -15,19 +17,4 @@ public class CountDigits{
         }
         return count;
     }
-
-    //geeksforgeeks solution
-    static int countDigits(int x)
-	{
-		int res = 0;
-
-		while(x > 0)
-		{
-				x = x / 10;
-
-				res++;
-		}
-
-		return res;
-	}
 }

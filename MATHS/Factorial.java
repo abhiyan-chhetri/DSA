@@ -8,13 +8,13 @@ public class Factorial {
 
      public static void main(String[] args){
 
-        System.out.println(findFactorial(4));
+        System.out.println(findFactorial(17));
      }
 
      // recursion to find factorial
      static int findFactorial(int number){
         //base case
-        if(number == 1){
+        if(number == 0){
             return 1;
         }
         return number * (findFactorial(number -1));
